@@ -6,7 +6,7 @@
 Help()
 {
    # Display Help
-   echo "Build docker image for Magasin Zookeeper cluster coordinator"
+   echo "Build docker image for K8s Zookeeper cluster coordinator"
    echo
    echo "Syntax: scriptTemplate [-r|t|v]"
    echo "options:"
