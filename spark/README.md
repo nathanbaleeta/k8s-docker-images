@@ -9,7 +9,7 @@ tar -xvf spark-4.0.1-bin-hadoop3.tgz
 ```
 
 #### 2. Build & push the image to container registry
-Spark also ships with a bin/docker-image-tool.sh script that can be used to build and publish the Docker images to use with the Kubernetes backend. By default bin/docker-image-tool.sh builds docker image for running JVM jobs
+Spark also ships with a `bin/docker-image-tool.sh` script that can be used to build and publish the Docker images to use with the Kubernetes backend. By default `bin/docker-image-tool.sh` builds docker image for running JVM jobs
 ```
 $ ./bin/docker-image-tool.sh -r nbaleeta -t 4.0.1 build
 $ ./bin/docker-image-tool.sh -r nbaleeta -t 4.0.1 push
