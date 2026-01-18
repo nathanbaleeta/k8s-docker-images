@@ -6,7 +6,6 @@ https://spark.apache.org/downloads.html?ref=chaosgenius.io
 ```
 curl -O https://dlcdn.apache.org/spark/spark-4.0.1/spark-4.0.1-bin-hadoop3.tgz
 tar -xvf spark-4.0.1-bin-hadoop3.tgz
-
 ```
 
 #### 2. Build & push the image to container registry
