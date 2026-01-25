@@ -14,7 +14,7 @@ docker push nbaleeta/airflow-custom:latest
 ```
 
 ### Verify docker image properly built
-Confirm Airflow version correctly built & working. 
+Airflow image name:tag should match a built image locally available
 ```
-./verify_docker_image.sh
+./verify_docker_image.sh -t airflow-custom:latest
 ```
