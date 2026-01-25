@@ -12,3 +12,9 @@ Once built, push the image to your container registry so your Kubernetes cluster
 ```
 docker push nbaleeta/airflow-custom:latest
 ```
+
+### Verify docker image properly built
+Confirm Airflow version correctly built & working. 
+```
+./verify_docker_image.sh
+```
