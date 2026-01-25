@@ -10,7 +10,7 @@ docker build -t nbaleeta/airflow-custom:latest .
 ### Verify docker image properly built
 Airflow image name:tag should match a built image locally available
 ```
-./verify_docker_image.sh -t nbaleeta/airflow-custom:latest
+cd scripts && ./verify_docker_image.sh -t nbaleeta/airflow-custom:latest
 ```
 
 ### Push the Image to a Registry 
