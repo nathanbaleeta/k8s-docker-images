@@ -1,5 +1,11 @@
 ### Step-by-Step Commands to run Airflow services:
 
+#### Create necessary local folders and grant permissions
+```
+mkdir -p dags logs plugins
+chmod -R 777 dags logs plugins
+```
+
 #### Postgres first
 ```
 make postgres
