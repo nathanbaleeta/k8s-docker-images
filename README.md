@@ -1,4 +1,4 @@
-## Building Docker Images for Kubernetes
+## Building Custom Docker Images for Kubernetes
 
 You typically build a Docker image from a Dockerfile, which contains instructions for creating the image layers. The standard workflow involves: 
 1. Writing a Dockerfile: This file specifies the base image, adds dependencies, copies application code, and defines the command to run the application.
