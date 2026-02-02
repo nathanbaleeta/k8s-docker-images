@@ -18,7 +18,7 @@ default_args = {
     default_args=default_args,
     schedule_interval='@daily', # Runs once a day
     catchup=False,
-    tags=["users"]
+    tags=["users"],
     doc_md="""
     ### API to Pandas ETL DAG
     This DAG fetches data from a sample API, transforms it into a pandas DataFrame, and simulates loading the data.
