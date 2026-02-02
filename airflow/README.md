@@ -4,18 +4,18 @@
 ### Build the Docker Image from template Dockerfile
 Provide a suitable tag (e.g., latest or a version number). 
 ```
-docker build -t nbaleeta/airflow-custom:latest .
+docker build -t nbaleeta/airflow-custom:2.8.1 .
 ```
 
 ### Verify docker image properly built
 Airflow image name:tag should match a built image locally available
 ```
-cd scripts && ./verify_docker_image.sh -t nbaleeta/airflow-custom:latest
+cd scripts && ./verify_docker_image.sh -t nbaleeta/airflow-custom:2.8.1
 ```
 
 ### Push the Image to a Registry 
 Once built, push the image to your container registry so your Kubernetes cluster can pull it
 ```
-docker push nbaleeta/airflow-custom:latest
+docker push nbaleeta/airflow-custom:2.8.1
 ```
 
