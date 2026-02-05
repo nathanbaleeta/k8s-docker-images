@@ -1,11 +1,13 @@
 ## Building custom Trino image for K8s
-To build the specific Trino modules (trino-server and trino-cli) and then the associated locally modified Docker image, execute the following commands from the root directory of the Trino project: 
 
-[Trino](https://github.com/trinodb/trino) is a standard Maven project. Simply run the following command from the project root directory:
+### Build the Docker Image from template Dockerfile
+Provide a suitable tag (e.g., latest or a version number). 
 ```
-./mvnw clean install -DskipTests
+docker build -t nbaleeta/trino-custom:4.7.5 .
 ```
-To build image for specific released version, specify -r option (may require buildx for building images)
+
+### Push the Image to a Registry 
+Once built, push the image to your container registry so your Kubernetes cluster can pull it
 ```
-build.sh -r 475
+docker push nbaleeta/trino-custom:4.7.5
 ```
