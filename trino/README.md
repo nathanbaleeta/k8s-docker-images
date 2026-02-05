@@ -20,7 +20,6 @@ Identify target catalog
 ```
 SHOW CATALOGS;
 SHOW SCHEMAS IN <catalog>; 
-SHOW SCHEMAS FROM <catalog>;
 USE catalog.schema
 SHOW TABLES;
 ```
