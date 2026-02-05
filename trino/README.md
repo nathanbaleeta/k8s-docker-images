@@ -1,5 +1,9 @@
-## Building custom Trino image for K8s
+## Building custom Trino image for K8s (Debian based to allow extending)
 
+If you haven't authenticated yet, first run:
+```
+docker login dhi.io
+```
 ### Build the Docker Image from template Dockerfile
 Provide a suitable tag (e.g., latest or a version number). 
 ```
