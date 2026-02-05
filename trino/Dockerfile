@@ -1,15 +1,8 @@
 # Define ARG variables for the build
-ARG TRINO_VERSION="475"
+ARG TRINO_VERSION="479"
 
-# Use the official Trino image as a base
-FROM trinodb/trino:${TRINO_VERSION}
+# Use production ready docker hardened images - https://hub.docker.com/hardened-images/catalog/dhi/trino
+FROM dhi.io/trino:${TRINO_VERSION}
 
-# Switch to root user to perform installation steps
-USER root
-
-# (Optional) Copy catalog property files if needed 
-COPY catalog/ /etc/trino/catalog/
-COPY plugin/ /usr/lib/trino/plugin/
-
-# Switch back to the default trino user
+# Switch back to the default trino user. Use nonroot user as security best practice
 USER trino:trino
