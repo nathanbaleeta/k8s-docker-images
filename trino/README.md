@@ -22,4 +22,5 @@ SHOW CATALOGS;
 SHOW SCHEMAS IN <catalog>; 
 USE catalog.schema
 SHOW TABLES;
+SHOW COLUMNS FROM table;
 ```
