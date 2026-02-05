@@ -1,28 +1,16 @@
-##   [Trino](https://trino.io/docs/current/index.html)
+## Building custom Trino image for K8s
+To build an image for a locally modified version of Trino, run the Maven build (usually takes a while for first time) before building the image
 
-#### Run a Trino container locally
-The Trino server is now running on localhost:8080 (the default port).
+Trino is a standard Maven project. Simply run the following command from the project root directory:
 ```
-docker run -d -p 8080:8080 --name trino trinodb/trino
-```
-
-#### Run the Trino CLI
-Run the Trino CLI, which connects to localhost:8080 by default:
-```
-docker exec -it trino trino
+./mvnw clean install -DskipTests
 ```
 
-You can pass additional arguments to the Trino CLI to connect to specific catalog/ schema:
 ```
-docker exec -it trino trino --catalog tpch --schema sf1
+build.sh
 ```
 
-##### Steps to view schemas in a [Trino catalog](https://trino.io/docs/current/sql/use.html)
-Identify target catalog
+To build image for specific released version, specify -r option
 ```
-SHOW CATALOGS;
-SHOW SCHEMAS IN <catalog>; 
-USE catalog.schema
-SHOW TABLES;
-SHOW COLUMNS FROM table;
+build.sh -r 381
 ```
