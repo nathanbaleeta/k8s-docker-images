@@ -5,7 +5,7 @@ To build the specific Trino modules (trino-server and trino-cli) and then the as
 ```
 ./mvnw clean install -DskipTests
 ```
-To build image for specific released version, specify -r option
+To build image for specific released version, specify -r option (may require buildx for building images)
 ```
-build.sh -r 381
+build.sh -r 475
 ```
