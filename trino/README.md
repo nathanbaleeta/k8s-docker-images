@@ -15,8 +15,12 @@ You can pass additional arguments to the Trino CLI to connect to specific catalo
 docker exec -it trino trino --catalog tpch --schema sf1
 ```
 
-##### Steps to view schemas in a Trino catalog
+##### Steps to view schemas in a [Trino catalog](https://trino.io/docs/current/sql/use.html)
 Identify target catalog
 ```
 SHOW CATALOGS;
+SHOW SCHEMAS IN <catalog>; 
+SHOW SCHEMAS FROM <catalog>;
+USE catalog.schema
+SHOW TABLES;
 ```
