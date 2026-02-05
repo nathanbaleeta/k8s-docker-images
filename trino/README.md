@@ -5,11 +5,6 @@ To build an image for a locally modified version of Trino, run the Maven build (
 ```
 ./mvnw clean install -DskipTests
 ```
-
-```
-build.sh
-```
-
 To build image for specific released version, specify -r option
 ```
 build.sh -r 381
