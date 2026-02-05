@@ -1,4 +1,4 @@
-## Building custom Trino image for K8s (Debian based to allow extending)
+## Building production ready custom [Trino](https://hub.docker.com/hardened-images/catalog/dhi/trino) image for K8s (Debian based to allow extending)
 
 If you haven't authenticated yet, first run:
 ```
