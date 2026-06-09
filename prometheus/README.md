@@ -7,11 +7,11 @@ docker login dhi.io
 ### Build the Docker Image from template Dockerfile
 Provide a suitable tag (e.g., latest or a version number). 
 ```
-docker build -t nbaleeta/prometheus-custom:<tag> .
+docker build -t nbaleeta/prometheus-custom:3.12.0-debian13 .
 ```
 
 ### Push the Image to a Registry 
 Once built, push the image to your container registry so your Kubernetes cluster can pull it
 ```
-docker push nbaleeta/prometheus-custom:<tag>
+docker push nbaleeta/prometheus-custom:3.12.0-debian13
 ```
