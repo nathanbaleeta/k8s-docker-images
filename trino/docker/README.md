@@ -3,12 +3,12 @@
 #### Run a Trino container locally
 The Trino server is now running on localhost:8080 (the default port).
 ```
-docker run -d -p 8080:8080 --name trino nbaleeta/trino-custom:4.7.5
+docker run -d -p 8080:8080 --name trino nbaleeta/trino-custom:4.7.9
 ```
 
 To avoid having to create catalog files and mount them in the container, you can enable dynamic catalog management by setting the CATALOG_MANAGEMENT environmental variable to dynamic.
 ```
-docker run -d -p 8080:8080 --name trino -e CATALOG_MANAGEMENT=dynamic nbaleeta/trino-custom:4.7.5
+docker run -d -p 8080:8080 --name trino -e CATALOG_MANAGEMENT=dynamic nbaleeta/trino-custom:4.7.9
 ```
 To make these changes persistent across container restarts, a volume must be mounted at `/etc/trino/catalog`
 
