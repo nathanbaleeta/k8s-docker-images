@@ -3,5 +3,5 @@
 #### Run a Prometheus container locally
 The Prometheus server is now running on localhost:9090 (the default port).
 ```
-docker run -d -p 9090:9090 --name prometheus nbaleeta/prometheus-custom:3.12.0-debian13
+docker run -d -p 9090:9090 nbaleeta/prometheus-custom:3.12.0-debian13
 ```
