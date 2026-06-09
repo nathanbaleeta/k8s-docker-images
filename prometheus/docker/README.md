@@ -1,4 +1,4 @@
-##   [Running Prometheus locally using Docker](https://trino.io/docs/current/index.html)
+##   [Running Prometheus locally using Docker](https://prometheus.io/docs/prometheus/latest/getting_started/)
 
 #### Run a Prometheus container locally
 The Prometheus server is now running on localhost:9090 (the default port).
