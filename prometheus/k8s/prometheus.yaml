@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prometheus
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: prometheus     # <-- Must match the template label below
+  template:
+    metadata:
+      labels:
+        app: prometheus   # <-- Must match the selector label above
+    spec:
+      containers:
+      - name: prometheus
+        image: nbaleeta/prometheus-custom:3.12.0-debian13
+        ports:
+        - containerPort: 9090
