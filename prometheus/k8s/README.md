@@ -16,5 +16,5 @@ kubectl apply -n prometheus-monitoring -f prometheus.yaml
 
 ##### Use port forwarding to access Prometheus web UI
 ```
-kubectl port-forward prometheus-6c7f5f657c-ptnxg 9090:9090 -n prometheus-monitoring
+kubectl port-forward <prometheus-pod> 9090:9090 -n prometheus-monitoring
 ```
