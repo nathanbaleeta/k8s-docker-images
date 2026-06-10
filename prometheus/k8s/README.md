@@ -10,11 +10,11 @@ Apply the manifest to your Kubernetes cluster
 alias k=kubectl
 ```
 ```
-kubectl create ns prometheus-monitoring
-kubectl apply -n prometheus-monitoring -f prometheus.yaml
+kubectl create ns monitoring
+kubectl apply -n monitoring -f prometheus.yaml
 ```
 
 ##### Use port forwarding to access Prometheus web UI
 ```
-kubectl port-forward <prometheus-pod> 9090:9090 -n prometheus-monitoring
+kubectl port-forward <prometheus-pod> 9090:9090 -n monitoring
 ```
