@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grafana
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: grafana     # <-- Must match the template label below
+  template:
+    metadata:
+      labels:
+        app: grafana   # <-- Must match the selector label above
+    spec:
+      containers:
+      - name: grafana
+        image: nbaleeta/grafana-custom:13-debian
+        ports:
+        - containerPort: 3000
