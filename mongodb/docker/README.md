@@ -1,6 +1,6 @@
-##   [Running Trino locally using Docker](https://trino.io/docs/current/index.html)
+##   [Running MongoDB locally using Docker](https://trino.io/docs/current/index.html)
 
-#### Run a Mongo container locally
+#### Run a MongoDB container locally
 ```
 docker run -d --name mongodb -v mongodb_data:/data/db \
   dhi.io/mongodb:8-debian-dev
