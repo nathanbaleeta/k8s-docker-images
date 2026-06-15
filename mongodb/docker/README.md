@@ -19,5 +19,4 @@ docker exec -it <mongodb_container_id> mongosh
 List databases
 ```
 show dbs
-
 ```
