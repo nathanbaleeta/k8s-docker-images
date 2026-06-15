@@ -13,5 +13,5 @@ docker build -t nbaleeta/mongodb-custom:8-debian .
 ### Push the Image to a Registry 
 Once built, push the image to your container registry so your Kubernetes cluster can pull it
 ```
-docker push nbaleeta/trino-custom:8-debian
+docker push nbaleeta/mongodb-custom:8-debian
 ```
