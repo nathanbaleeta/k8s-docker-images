@@ -7,7 +7,7 @@ docker login dhi.io
 ### Build the Docker Image from template Dockerfile
 Provide a suitable tag (e.g., latest or a version number). 
 ```
-docker build -t nbaleeta/mongodb-custom:8-debian .
+docker build --platform linux/arm64 -t nbaleeta/mongodb-custom:8-debian .
 ```
 
 ### Push the Image to a Registry 
