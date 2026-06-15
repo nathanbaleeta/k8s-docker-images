@@ -15,7 +15,7 @@ Run the MongoDB shell:
 docker exec -it <mongodb_container_id> mongosh
 ```
 
-##### Steps to view databases in a [Mongo](https://www.mongodb.com/docs/mongodb-shell/run-commands/)
+##### Steps to view databases in [MongoDB](https://www.mongodb.com/docs/mongodb-shell/run-commands/)
 List databases
 ```
 show dbs
