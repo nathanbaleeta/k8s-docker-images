@@ -4,7 +4,7 @@
 The ClickHouse server is now running on localhost:8123 (the default port).
 ```
 docker run -d \
-  --name clickhouse-server \
+  --name my-clickhouse-server \
   -p 8123:8123 \
   -p 9000:9000 \
   -e CLICKHOUSE_USER=admin \
