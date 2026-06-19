@@ -14,3 +14,14 @@ docker run -d \
 
 #### Access the UI
 Open your browser and navigate to `http://localhost:8123`
+
+#### Access the CLI
+```
+docker exec -it my-clickhouse-server clickhouse-client
+```
+
+##### Run some queries to interact with OLAP database
+```
+SHOW DATABASES
+```
+
