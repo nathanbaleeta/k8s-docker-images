@@ -13,4 +13,4 @@ docker run -d \
 ```
 
 #### Access the UI
-Open your browser and navigate to `http://localhost:8123``
+Open your browser and navigate to `http://localhost:8123`
