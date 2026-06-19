@@ -7,5 +7,10 @@ docker run -d \
   --name clickhouse-server \
   -p 8123:8123 \
   -p 9000:9000 \
+  -e CLICKHOUSE_USER=admin \
+  -e CLICKHOUSE_PASSWORD=YourSecurePassword123! \
   nbaleeta/clickhouse-server:25-debian
 ```
+
+#### Access the UI
+Open your browser and navigate to `http://localhost:8123``
