@@ -15,12 +15,16 @@ docker run -d \
 #### Access the UI
 Open your browser and navigate to `http://localhost:8123`
 
-#### Access the CLI without Web UI
+#### Access the CLI without Web UI and execute some queries to interact with datawarehouse
+docker run -d \
+  --name my-clickhouse-server \
+  -p 8123:8123 \
+  -p 9000:9000 \
+  nbaleeta/clickhouse-server:25-debian
+```
 ```
 docker exec -it my-clickhouse-server clickhouse-client
 ```
-
-##### Run some queries to interact with OLAP database
 ```
 SHOW DATABASES
 ```
