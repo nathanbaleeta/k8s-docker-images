@@ -16,6 +16,7 @@ docker run -d \
 Open your browser and navigate to `http://localhost:8123`
 
 #### Access the CLI without Web UI and execute some queries to interact with datawarehouse
+```
 docker run -d \
   --name my-clickhouse-server \
   -p 8123:8123 \
