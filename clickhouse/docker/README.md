@@ -1,4 +1,4 @@
-##   [Running ClickHOuse server locally using Docker](https://clickhouse.com/)
+##   [Running ClickHouse server locally using Docker](https://clickhouse.com/)
 
 #### Run a ClickHouse container locally
 The ClickHouse server is now running on localhost:8123 (the default port).
