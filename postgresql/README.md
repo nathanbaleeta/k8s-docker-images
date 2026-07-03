@@ -7,7 +7,7 @@ docker login dhi.io
 ### Build the Docker Image from template Dockerfile
 Provide a suitable tag (e.g., latest or a version number). 
 ```
-docker build -t nbaleeta/postgres-custom:18-debian-dev .
+docker build -t nbaleeta/postgres-custom:18-debian .
 ```
 
 ### Push the Image to a Registry 
