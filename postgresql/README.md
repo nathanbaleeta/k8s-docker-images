@@ -15,5 +15,5 @@ Once built, push the image to your container registry so your Kubernetes cluster
 ```
 docker login
 
-docker push nbaleeta/postgresql-custom:18-debian
+docker push nbaleeta/postgres-custom:18-debian
 ```
