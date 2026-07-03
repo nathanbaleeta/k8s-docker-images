@@ -8,7 +8,7 @@ docker run --name my-postgres \
     -e POSTGRESQL_DB=mydb \
     -e POSTGRESQL_USER=postgres \
     -e POSTGRES_PASSWORD=postgres \
-    -d nbaleeta/postgres-custom:18-debian-dev
+    -d nbaleeta/postgres-custom:18-debian
 ```
 
 #### Access the CLI and execute some queries to interact with database
