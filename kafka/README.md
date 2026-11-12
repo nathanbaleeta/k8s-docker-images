@@ -1,5 +1,11 @@
 ##   [Running Kafka server locally using Docker](https://kafka.apache.org/)
 
+
+If you haven't authenticated yet, first run:
+```
+docker login dhi.io
+```
+
 ### Run a Kafka container locally
 Start a Kafka instance
 ```
