@@ -32,7 +32,6 @@ docker exec -it some-kafka /opt/kafka/bin/kafka-cluster.sh cluster-id --bootstra
 Doing so will produce output similar to the following:
 ```
 Cluster ID: HyqfhFbiTQ6T6WuHfXKiIg
-
 ```
 
 ### Test End-to-End Message Flow
