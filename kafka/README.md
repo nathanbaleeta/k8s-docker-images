@@ -38,9 +38,16 @@ Once the broker is confirmed healthy, run an end-to-end test by creating a topic
     --bootstrap-server localhost:9092 \
     --list
   ```
-  - **Produce test messages.**. Start the console producer, type a few messages (pressing Enter after each), and press Ctrl+C when finished.
+- **Produce test messages.**. Start the console producer, type a few messages (pressing Enter after each), and press Ctrl+C when finished.
     ```
       docker exec -it kafka /opt/kafka/bin/kafka-console-producer.sh \
     --bootstrap-server localhost:9092 \
     --topic test-topic
     ```
+- **Consume test messages.** Read the messages back from the beginning of the log to confirm storage and delivery work properly.
+  ```
+  docker exec -it kafka /opt/kafka/bin/kafka-console-consumer.sh \
+  --bootstrap-server localhost:9092 \
+  --topic test-topic \
+  --from-beginning
+  ```
