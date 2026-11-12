@@ -29,6 +29,11 @@ docker logs some-kafka | grep -i "started"
 ```
 docker exec -it some-kafka /opt/kafka/bin/kafka-cluster.sh cluster-id --bootstrap-server localhost:9092
 ```
+Doing so will produce output similar to the following:
+```
+Cluster ID: HyqfhFbiTQ6T6WuHfXKiIg
+
+```
 
 ### Test End-to-End Message Flow
 Once the broker is confirmed healthy, run an end-to-end test by creating a topic, producing messages, and reading them back.
