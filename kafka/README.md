@@ -23,3 +23,12 @@ docker logs kafka | grep -i "started"
 ```
 docker exec -it some-kafka /opt/kafka/bin/kafka-cluster.sh cluster-id --bootstrap-server localhost:9092
 ```
+
+### Test End-to-End Message Flow
+Once the broker is confirmed healthy, run an end-to-end test by creating a topic, producing messages, and reading them back.
+- **Create a test topic**
+  ```
+  docker exec -it kafka /opt/kafka/bin/kafka-topics.sh \
+  --bootstrap-server localhost:9092 \
+  --create --topic test-topic
+  ```
