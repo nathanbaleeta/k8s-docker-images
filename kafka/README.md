@@ -19,3 +19,7 @@ docker ps
 docker logs kafka | grep -i "started"
 ```
 
+**Verify cluster metadata.** Use the cluster script 
+```
+docker exec -it some-kafka /opt/kafka/bin/kafka-cluster.sh cluster-id --bootstrap-server localhost:9092
+```
