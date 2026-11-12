@@ -9,17 +9,17 @@ docker run --name some-kafka -d \
 ```
 
 ### Verify and Test the Broker
--**Check container status.** Run docker ps to verify the container is up and port 9092 is mapped.
+- **Check container status.** Run docker ps to verify the container is up and port 9092 is mapped.
 ```
 docker ps
 ```
 
--**Inspect broker logs.** Check the container logs for the startup confirmation message.
+- **Inspect broker logs.** Check the container logs for the startup confirmation message.
 ```
 docker logs kafka | grep -i "started"
 ```
 
--**Verify cluster metadata.** Use the cluster script 
+- **Verify cluster metadata.** Use the cluster script 
 ```
 docker exec -it some-kafka /opt/kafka/bin/kafka-cluster.sh cluster-id --bootstrap-server localhost:9092
 ```
