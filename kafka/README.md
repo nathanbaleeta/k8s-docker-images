@@ -32,3 +32,9 @@ Once the broker is confirmed healthy, run an end-to-end test by creating a topic
   --bootstrap-server localhost:9092 \
   --create --topic test-topic
   ```
+- **List topics to confirm creation**. Verify that `test-topic` appears in the broker's topic list.
+  ```
+  docker exec -it kafka /opt/kafka/bin/kafka-topics.sh \
+  --bootstrap-server localhost:9092 \
+  --list
+  ```
