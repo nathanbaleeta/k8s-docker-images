@@ -28,13 +28,19 @@ docker exec -it some-kafka /opt/kafka/bin/kafka-cluster.sh cluster-id --bootstra
 Once the broker is confirmed healthy, run an end-to-end test by creating a topic, producing messages, and reading them back.
 - **Create a test topic**
   ```
-  docker exec -it kafka /opt/kafka/bin/kafka-topics.sh \
-  --bootstrap-server localhost:9092 \
-  --create --topic test-topic
+    docker exec -it kafka /opt/kafka/bin/kafka-topics.sh \
+    --bootstrap-server localhost:9092 \
+    --create --topic test-topic
   ```
 - **List topics to confirm creation**. Verify that `test-topic` appears in the broker's topic list.
   ```
-  docker exec -it kafka /opt/kafka/bin/kafka-topics.sh \
-  --bootstrap-server localhost:9092 \
-  --list
+    docker exec -it kafka /opt/kafka/bin/kafka-topics.sh \
+    --bootstrap-server localhost:9092 \
+    --list
   ```
+  - **Produce test messages.**. Start the console producer, type a few messages (pressing Enter after each), and press Ctrl+C when finished.
+    ```
+      docker exec -it kafka /opt/kafka/bin/kafka-console-producer.sh \
+    --bootstrap-server localhost:9092 \
+    --topic test-topic
+    ```
