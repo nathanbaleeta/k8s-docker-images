@@ -22,7 +22,7 @@ docker ps
 
 - **Inspect broker logs.** Check the container logs for the startup confirmation message.
 ```
-docker logs kafka | grep -i "started"
+docker logs some-kafka | grep -i "started"
 ```
 
 - **Verify cluster metadata.** Use the cluster script 
